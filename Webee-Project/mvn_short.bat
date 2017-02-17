@@ -1,0 +1,1 @@
+mvn install -P local -DskipTests=true
