@@ -20,10 +20,6 @@ webee-web/logs/*
 webee-ws/target
 webee-ws/bin
 webee-ws/logs/*
-webee-service-ws/*
-webee/target
-webee/gen
-/target
 
 *.iml
 .settings*
