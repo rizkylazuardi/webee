@@ -24,7 +24,7 @@ webee-ws/logs/*
 *.iml
 .settings*
 .classpath
-.project
+*.project
 .springBeans
 *.jasper
 *.class
