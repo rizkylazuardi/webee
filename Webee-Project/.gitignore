@@ -10,17 +10,20 @@ webee-service/target
 webee-service/bin
 webee-service/logs/*
 webee-service-ws/*
+webee-service/.project
 webee-web/target
 webee-web/bin
 webee-web/logs/*
 webee-web-enduser/target
 webee-web-enduser/bin
 webee-web-enduser/logs/*
+webee-web/.project
 webee-ws/target
 webee-ws/bin
 webee-ws/logs/*
 webee-ws/src/main/java/com/anabatic/ebanking/service/contract/*
 webee-ws/src/main/java/com/anabatic/pocket/service/contract/*
+webee-ws/.project
 webee-core/target
 ebanking-core/bin
 webee-core/logs/*
@@ -42,3 +45,6 @@ ebanking-web-enduser/logs/*
 .springBeans
 *.jasper
 *.class
+/mvn_panjang.bat
+/mvn_short.bat
+/remove_folder.bat
