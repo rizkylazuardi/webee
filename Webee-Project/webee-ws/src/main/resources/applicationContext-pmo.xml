@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+       default-lazy-init="true">
+      
+    <!-- Scanning @Controller and @RequestMapping -->
+    <!-- <context:component-scan base-package="com.anabatic.project" /> -->
+	<context:annotation-config />
+	<!-- Scanning @Service -->
+
+	 <!-- SERVICES -->
+	 <bean id="employeeGroupService" class="com.anabatic.pmo.service.impl.EmployeeGroupServiceImpl" />
+	 
+	 <!-- PERSISTENCE -->
+	<context:property-placeholder location="classpath:jdbc.properties"/>
+    <bean id="sqlSessionFactory" class="com.anabatic.pmo.persistence.config.ConfigurationDatabasePMO" />
+    <bean id="employeeGroupMapper" class="com.anabatic.pmo.persistence.dao.impl.EmployeeGroupMapperImpl" />
+	 
+	 <!-- BUSINESSLOGIC -->
+     <bean id="groupValidator" class="com.anabatic.pmo.businesslogic.validator.impl.EmployeeGroupValidatorImpl" />	
+</beans>

@@ -13,7 +13,6 @@
 			<url>scp://webhost.company.com/www/website</url>
 		</site>
 	</distributionManagement>
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java-version>1.7</java-version>
@@ -23,16 +22,17 @@
 		<log4j.version>1.2.17</log4j.version>
 		<slf4j.version>1.6.1</slf4j.version>
 		<commons.lang.version>2.6</commons.lang.version>
-		<spring.version>3.1.4.RELEASE</spring.version>
+		<spring.version>4.3.2.RELEASE</spring.version>
 		<spring.batch.version>2.1.9.RELEASE</spring.batch.version>
 		<spring.batch.admin.version>1.2.1.RELEASE</spring.batch.admin.version>
 		<jstl.version>1.1.2</jstl.version>
 		<sitemesh.version>2.4.2</sitemesh.version>
-		<spring.security.version>3.1.4.RELEASE</spring.security.version>
+		<springsecurity.version>4.0.1.RELEASE</springsecurity.version>
 		<tomcat.jdbc>7.0.27 </tomcat.jdbc>
 		<urlrewrite.version>3.1.0</urlrewrite.version>
 		<springmodules.validation.version>0.8</springmodules.validation.version>
 		<apache.shiro.version>1.2.0</apache.shiro.version>
+		<jackson.library>2.7.5</jackson.library>
 	</properties>
 	<build>
 		<defaultGoal>install</defaultGoal>
@@ -126,11 +126,7 @@
 			<artifactId>commons-lang</artifactId>
 			<version>${commons.lang.version}</version>
 		</dependency>
-		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<version>9.3-1102.jdbc41</version>
-		</dependency>
+		
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>apache-log4j-extras</artifactId>
@@ -167,61 +163,11 @@
 			<artifactId>spring-beans</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		<dependency>
-			<groupId>org.jboss.resteasy</groupId>
-			<artifactId>resteasy-jaxrs</artifactId>
-			<version>2.2.1.GA</version>
-		</dependency>
-		<dependency>
-			<groupId>org.jboss.resteasy</groupId>
-			<artifactId>resteasy-jackson-provider</artifactId>
-			<version>2.2.1.GA</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.httpcomponents</groupId>
-			<artifactId>httpclient</artifactId>
-			<version>4.1.1</version>
-		</dependency>
-		<dependency>
-			<groupId>com.sun.jersey</groupId>
-			<artifactId>jersey-server</artifactId>
-			<version>1.9.1</version>
-		</dependency>
-		<dependency>
-			<groupId>com.sun.jersey</groupId>
-			<artifactId>jersey-json</artifactId>
-			<version>1.9.1</version>
-			<exclusions>
-				<exclusion>
-					<artifactId>jaxb-impl</artifactId>
-					<groupId>com.sun.xml.bind</groupId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>com.sun.jersey</groupId>
-			<artifactId>jersey-client</artifactId>
-			<version>1.9.1</version>
-		</dependency>
-		<dependency>
-			<groupId>com.googlecode.json-simple</groupId>
-			<artifactId>json-simple</artifactId>
-			<version>1.1</version>
-		</dependency>
-		<dependency>
-			<groupId>commons-net</groupId>
-			<artifactId>commons-net</artifactId>
-			<version>3.3</version>
-		</dependency>
 	</dependencies>
 
 	<modules>
 		<module>webee-ws</module>
-		<module>webee-businesslogic</module>
 		<module>webee-core</module>
-		<module>webee-persistence</module>
-		<module>webee-service</module>
-		<module>webee-integration</module>
 		<module>webee-web</module>
 	</modules>
 </project>

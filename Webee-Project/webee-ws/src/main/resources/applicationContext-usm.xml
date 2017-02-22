@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+       default-lazy-init="true">
+      
+    <!-- Scanning @Controller and @RequestMapping -->
+    <!-- <context:component-scan base-package="com.anabatic.project" /> -->
+	<context:annotation-config />
+	<!-- Scanning @Service -->
+
+	 <!-- SERVICES -->
+	 <bean id="coreMenuService" class="com.anabatic.usm.service.impl.CoreMenuServiceImpl" /> 
+	  <bean id="coreRoleService" class="com.anabatic.usm.service.impl.CoreRoleServiceImpl" /> 
+	  <bean id="coreUserService" class="com.anabatic.usm.service.impl.CoreUserServiceImpl" />
+	 
+	 <!-- PERSISTENCE -->
+	<context:property-placeholder location="classpath:jdbc.properties"/>
+    <bean id="sqlSessionFactory" class="com.anabatic.usm.persistence.config.ConfigurationDatabase" />
+    <bean id="coreMenuMapper" class="com.anabatic.usm.persistence.dao.impl.mybatis.CoreMenuMapperImpl" />
+    <bean id="coreRoleMapper" class="com.anabatic.usm.persistence.dao.impl.mybatis.CoreRoleMapperImpl" />
+    <bean id="coreUserMapper" class="com.anabatic.usm.persistence.dao.impl.mybatis.CoreUserMapperImpl" />
+	 
+	 <!-- BUSINESSLOGIC -->
+     <bean id="userValidator" class="com.anabatic.usm.businesslogic.validator.impl.UserValidatorImpl" />
+    <bean id="roleValidator" class="com.anabatic.usm.businesslogic.validator.impl.RoleValidatorImpl"/>	
+</beans>
