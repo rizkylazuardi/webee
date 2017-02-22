@@ -3,8 +3,6 @@
   <classpathentry kind="src" path="src/main/java" including="**/*.java"/>
   <classpathentry kind="output" path="target/classes"/>
   <classpathentry kind="var" path="M2_REPO/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar" sourcepath="M2_REPO/javax/servlet/servlet-api/2.5/servlet-api-2.5-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar" sourcepath="M2_REPO/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/javax/servlet/jstl/1.2/jstl-1.2.jar" sourcepath="M2_REPO/javax/servlet/jstl/1.2/jstl-1.2-sources.jar"/>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
   <classpathentry kind="src" path="/webee-core"/>
   <classpathentry kind="var" path="M2_REPO/commons-lang/commons-lang/2.6/commons-lang-2.6.jar" sourcepath="M2_REPO/commons-lang/commons-lang/2.6/commons-lang-2.6-sources.jar">

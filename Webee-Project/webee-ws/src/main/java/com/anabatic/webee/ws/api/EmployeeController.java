@@ -14,7 +14,7 @@ import com.anabatic.pmo.persistence.entity.EmployeeGroup;
 import com.anabatic.pmo.service.api.EmployeeGroupService;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/employee")
 public class EmployeeController {
 	@Autowired 
 	private EmployeeGroupService groupService;

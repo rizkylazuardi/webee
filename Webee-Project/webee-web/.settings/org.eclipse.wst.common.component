@@ -25,12 +25,6 @@
     <dependent-module archiveName="servlet-api-2.5.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar">
       <dependency-type>uses</dependency-type>
     </dependent-module>
-    <dependent-module archiveName="jsp-api-2.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar">
-      <dependency-type>uses</dependency-type>
-    </dependent-module>
-    <dependent-module archiveName="jstl-1.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/javax/servlet/jstl/1.2/jstl-1.2.jar">
-      <dependency-type>uses</dependency-type>
-    </dependent-module>
     <dependent-module archiveName="spring-beans-4.3.2.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/org/springframework/spring-beans/4.3.2.RELEASE/spring-beans-4.3.2.RELEASE.jar">
       <dependency-type>uses</dependency-type>
     </dependent-module>

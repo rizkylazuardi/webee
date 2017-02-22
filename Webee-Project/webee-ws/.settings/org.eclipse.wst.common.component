@@ -16,7 +16,7 @@
     <dependent-module archiveName="spring-core-4.3.2.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/org/springframework/spring-core/4.3.2.RELEASE/spring-core-4.3.2.RELEASE.jar">
       <dependency-type>uses</dependency-type>
     </dependent-module>
-    <dependent-module archiveName="commons-logging-1.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/commons-logging/commons-logging/1.2/commons-logging-1.2.jar">
+    <dependent-module archiveName="commons-logging-1.0.4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar">
       <dependency-type>uses</dependency-type>
     </dependent-module>
     <dependent-module archiveName="spring-context-4.3.2.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/org/springframework/spring-context/4.3.2.RELEASE/spring-context-4.3.2.RELEASE.jar">
@@ -28,16 +28,34 @@
     <dependent-module archiveName="spring-web-4.3.2.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/org/springframework/spring-web/4.3.2.RELEASE/spring-web-4.3.2.RELEASE.jar">
       <dependency-type>uses</dependency-type>
     </dependent-module>
-    <dependent-module archiveName="jstl-1.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/javax/servlet/jstl/1.2/jstl-1.2.jar">
+    <dependent-module archiveName="spring-security-web-4.0.1.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/org/springframework/security/spring-security-web/4.0.1.RELEASE/spring-security-web-4.0.1.RELEASE.jar">
       <dependency-type>uses</dependency-type>
     </dependent-module>
-    <dependent-module archiveName="log4j-1.2.17.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/log4j/log4j/1.2.17/log4j-1.2.17.jar">
+    <dependent-module archiveName="aopalliance-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/aopalliance/aopalliance/1.0/aopalliance-1.0.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="spring-security-core-4.0.1.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/org/springframework/security/spring-security-core/4.0.1.RELEASE/spring-security-core-4.0.1.RELEASE.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="spring-security-config-4.0.1.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/org/springframework/security/spring-security-config/4.0.1.RELEASE/spring-security-config-4.0.1.RELEASE.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="spring-security-taglibs-4.0.1.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/org/springframework/security/spring-security-taglibs/4.0.1.RELEASE/spring-security-taglibs-4.0.1.RELEASE.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="spring-security-acl-4.0.1.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/org/springframework/security/spring-security-acl/4.0.1.RELEASE/spring-security-acl-4.0.1.RELEASE.jar">
       <dependency-type>uses</dependency-type>
     </dependent-module>
     <dependent-module archiveName="spring-jdbc-4.3.2.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/org/springframework/spring-jdbc/4.3.2.RELEASE/spring-jdbc-4.3.2.RELEASE.jar">
       <dependency-type>uses</dependency-type>
     </dependent-module>
     <dependent-module archiveName="spring-tx-4.3.2.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/org/springframework/spring-tx/4.3.2.RELEASE/spring-tx-4.3.2.RELEASE.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="jstl-1.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/javax/servlet/jstl/1.2/jstl-1.2.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="log4j-1.2.17.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/log4j/log4j/1.2.17/log4j-1.2.17.jar">
       <dependency-type>uses</dependency-type>
     </dependent-module>
     <dependent-module archiveName="jackson-databind-2.7.5.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/com/fasterxml/jackson/core/jackson-databind/2.7.5/jackson-databind-2.7.5.jar">
@@ -139,10 +157,16 @@
     <dependent-module archiveName="pmo-businesslogic-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/com/anabatic/pmo/pmo-businesslogic/1.0/pmo-businesslogic-1.0.jar">
       <dependency-type>uses</dependency-type>
     </dependent-module>
-    <dependent-module archiveName="servlet-api-2.5.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar">
+    <dependent-module archiveName="commons-httpclient-3.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar">
       <dependency-type>uses</dependency-type>
     </dependent-module>
-    <dependent-module archiveName="jsp-api-2.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar">
+    <dependent-module archiveName="commons-codec-1.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/commons-codec/commons-codec/1.2/commons-codec-1.2.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="webee-core.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/webee-core/webee-core">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="servlet-api-2.5.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar">
       <dependency-type>uses</dependency-type>
     </dependent-module>
     <wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/java"/>
